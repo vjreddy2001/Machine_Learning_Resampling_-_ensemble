@@ -1,8 +1,9 @@
 # Machine Learning : Resampling and ensemble Learning
+
+![machine-learning-separator-1](https://user-images.githubusercontent.com/83671629/127381601-bbf22078-2aea-4512-9dfd-3867257fe493.jpg)
+
 # Risky Business
  
-![Credit Risk](Images/credit-risk.jpg)
-
 ## Background
 
 Mortgages, student and auto loans, and debt consolidation are just a few examples of credit and loans that people seek online. Peer-to-peer lending services such as Loans Canada and Mogo let investors loan people money without using a bank. However, because investors always want to mitigate risk, a client has asked me to help them predict credit risk with machine learning techniques.
@@ -11,6 +12,9 @@ In this Tool I have built and evaluated several machine learning models to predi
 
 1. [Resampling](#Resampling)
 2. [Ensemble Learning](#Ensemble-Learning)
+
+<img src = "https://user-images.githubusercontent.com/83671629/127381649-404d1a2a-a678-4d19-80cf-b9bba253eda4.jpg" width="700" height="400"> 
+
 
 - - -
 
@@ -64,6 +68,9 @@ For each of the above the follwing actions were taken :
 
 The following conclutions were drawn:
 
+<img src = "https://user-images.githubusercontent.com/83671629/127381032-0cc11c36-eeac-4976-bc06-1e05f2d28205.png" width="700" height="400"> 
+
+
 * Which model had the best balanced accuracy score?
 
   SMOTE oversampling, ClusterCentroids undersampling and SMOTEENN combined over and under sampling have the highest Balanced Accuracy Score at 99.5%.
@@ -103,6 +110,9 @@ Then, the following steps were completed for each model:
 
 
 The following conclusions were drawn:
+
+![output2](https://user-images.githubusercontent.com/83671629/127381262-c5439f82-bd22-4393-a2b5-6545cb8dd5ed.png)
+
 
 * Which model had the best balanced accuracy score?
   EasyEnsembleClassifier has the best balanced accuracy score of 93% compared to the BalancedRandomForest Classifier at 78%. 
