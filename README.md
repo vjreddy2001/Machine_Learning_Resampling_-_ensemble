@@ -30,7 +30,7 @@ Using the [imbalanced learn](https://imbalanced-learn.readthedocs.io) library I 
 
 To begin the following steps were conducted:
 
-1. Read the CSV into a DataFrame.
+1. Data was read from the CSV into a DataFrame.
 
 2. Split the data into Training and Testing sets.
 
@@ -78,46 +78,48 @@ The following conclutions were drawn:
 
 ### Ensemble Learning 
 
-In this section, you will train and compare two different ensemble classifiers to predict loan risk and evaluate each model. You will use the [Balanced Random Forest Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html) and the [Easy Ensemble Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html). Refer to the documentation for each of these to read about the models and see examples of the code.
+In this Tool, I have trained and compared two different ensemble classifiers to predict loan risk and evaluated each model. The following two modles were used  [Balanced Random Forest Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html) and the [Easy Ensemble Classifier](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html). 
 
-To begin:
+To begin, the following steps were performed:
 
-1. Read the data into a DataFrame using the provided starter code.
+1. The data was read from the csv file into a DataFrame.
 
-2. Split the data into training and testing sets.
+2. The Data was Split into training and testing sets.
 
-3. Scale the training and testing data using the `StandardScaler` from `sklearn.preprocessing`.
-
-
-Then, complete the following steps for each model:
-
-1. Train the model using the quarterly data from LendingClub provided in the `Resource` folder.
-
-2. Calculate the balanced accuracy score from `sklearn.metrics`.
-
-3. Display the confusion matrix from `sklearn.metrics`.
-
-4. Generate a classification report using the `imbalanced_classification_report` from imbalanced learn.
-
-5. For the balanced random forest classifier only, print the feature importance sorted in descending order (most important feature to least important) along with the feature score.
+3. Scaled the training and testing data using the `StandardScaler` from `sklearn.preprocessing`.
 
 
-Use the above to answer the following questions:
+Then, the following steps were completed for each model:
+
+1. Trained the model using the quarterly data from LendingClub provided in the `Resource` folder.
+
+2. Calculated the balanced accuracy score from `sklearn.metrics`.
+
+3. Displayed the confusion matrix from `sklearn.metrics`.
+
+4. Generated a classification report using the `imbalanced_classification_report` from imbalanced learn.
+
+5. For the balanced random forest classifier, printed the feature importance sorted in descending order (most important feature to least important) along with the feature score.
+
+
+The following conclusions were drawn:
 
 * Which model had the best balanced accuracy score?
+  EasyEnsembleClassifier has the best balanced accuracy score of 93% compared to the BalancedRandomForest Classifier at 78%. 
 
 * Which model had the best recall score?
+  EasyEnsembleClassifier has the best recall score at 94% where as the BalancedRandomForestClassifier is at 87%.
 
 * Which model had the best geometric mean score?
+  EasyEnsembleClassifier has the best geometric mean score at 93%, where as the BalancedRandomForestClassifier has a score of 78%.
 
 * What are the top three features?
+  he top three features are 'total_rec_prncp' ,'total_pymnt', 'total_pymnt_inv'.
 
 - - -
 
-### Hints and Considerations
+### References
 
-Use the quarterly data from the LendingClub data provided in the `Resources` folder. Keep the file in the zipped format and use the starter code to read the file.
+Refer to the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable/) and [scikit-learn](https://scikit-learn.org/stable/) official documentation for help with training the models. 
 
-Refer to the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable/) and [scikit-learn](https://scikit-learn.org/stable/) official documentation for help with training the models. Remember that these models all use the model->fit->predict API.
-
-For the ensemble learners, use 100 estimators for both models.
+For the ensemble learners, used 100 estimators for both models.
