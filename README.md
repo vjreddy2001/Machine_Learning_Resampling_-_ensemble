@@ -65,10 +65,16 @@ For each of the above the follwing actions were taken :
 The following conclutions were drawn:
 
 * Which model had the best balanced accuracy score?
->  
+
+  SMOTE oversampling, ClusterCentroids undersampling and SMOTEENN combined over and under sampling have the highest Balanced Accuracy Score at 99.5%.
+  
 * Which model had the best recall score?
->
+
+  All the models SimpleLogisticRegression, NaiveRandomOversampling, SMOTE oversampling, ClusterCentroids undersampling, and SMOTEENN combined over & under all of them thave the same Recall value at 99%
+ 
 * Which model had the best geometric mean score?
+
+  NaiveRamdom oversampling, SMOTE oversampling, and Combined over&under sampling SMOTEENN model have the higest geometic mean score of 100%.
 
 ### Ensemble Learning 
 
